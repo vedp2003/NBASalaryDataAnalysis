@@ -104,5 +104,31 @@ The following libraries were used:
    cd nba-salary-prediction
 
 3. Download the dataset from Kaggle and save it as `nba_salaries.csv`.
-4. Open and run the Jupyter notebook `finalProj.ipynb` cell by cell to execute the analysis.
+4. Open and run the Jupyter notebook `finalProj.ipynb` cell by cell to execute the analysis (you can open this and run it on CodeBench or other Python platforms that allow Python Notebooks)
+
+## Key Results
+
+1. **Top Players**:
+   - Identified the top 10 players with the highest Weighted Efficiency (WEFF).
+
+2. **Salary Analysis**:
+   - Discovered significant variations in average salaries based on position, efficiency, and season.
+
+3. **Model Performance**:
+   - Best performing model: Random Forest Regressor with the highest R² score and lowest RMSE.
+
+---
+
+## Visualizations
+
+1. Salary trends by player positions and efficiency tiers.
+2. Scatter plots illustrating relationships between WEFF, points, and salaries.
+3. Bar plots showing top players' Weighted Efficiency and average salary by position.
+
+---
+
+## Video Demo
+
+Watch the full video demo [here](https://youtu.be/4oLf_3x37xU).
+
 

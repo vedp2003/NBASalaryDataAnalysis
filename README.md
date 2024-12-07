@@ -6,7 +6,7 @@ This project focuses on analyzing NBA player performance data and predicting pla
 
 ## Dataset
 
-The dataset was sourced from Kaggle. The data can be downloaded from here: [NBA Salary Dataset](https://www.kaggle.com/datasets/loganlauton/nba-players-and-team-data). The two important datasets used are 'NBA Player Stats.csv' and 'NBA Salaries.csv'.
+The dataset was sourced from Kaggle. The data can be downloaded from here: [NBA Salary Dataset](https://www.kaggle.com/datasets/loganlauton/nba-players-and-team-data). The two important datasets used are 'NBA Player Stats.csv' and 'NBA Salaries.csv'. We have also added these dataset csv files to this repository folder. 
 
 ---
 
@@ -108,7 +108,7 @@ The following libraries were used that must be imported:
    ```bash
    cd NBAMachineLearningProject
 
-3. Download the dataset csvs from Kaggle.
+3. Download the dataset csvs from Kaggle. Save them in the same directory/folder as the Jupyter notebook. 
 4. Open and run the Jupyter notebook `finalProj.ipynb` cell by cell to execute the analysis (you can open this and run it on CodeBench or other Python platforms that allow Python Notebooks)
 
 ## Video Demo

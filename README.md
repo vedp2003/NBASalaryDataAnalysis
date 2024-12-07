@@ -102,11 +102,11 @@ The following libraries were used that must be imported:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/nba-salary-prediction.git
+   git clone https://github.com/vedp2003/NBAMachineLearningProject.git
    
 2. Navigate to the project folder:
    ```bash
-   cd nba-salary-prediction
+   cd NBAMachineLearningProject
 
 3. Download the dataset csvs from Kaggle.
 4. Open and run the Jupyter notebook `finalProj.ipynb` cell by cell to execute the analysis (you can open this and run it on CodeBench or other Python platforms that allow Python Notebooks)

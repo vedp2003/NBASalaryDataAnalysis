@@ -83,6 +83,26 @@ The dataset was sourced from Kaggle. Make sure to download it from the following
 
 ## Requirements
 
-Install the required Python libraries by running:
-```bash
-pip install -r requirements.txt
+The following libraries were used:
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `seaborn`
+- `scikit-learn`
+- `sqlite3`
+
+---
+
+## Steps to Run the Project
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/nba-salary-prediction.git
+   
+2. Navigate to the project folder:
+   ```bash
+   cd nba-salary-prediction
+
+3. Download the dataset from Kaggle and save it as `nba_salaries.csv`.
+4. Open and run the Jupyter notebook `finalProj.ipynb` cell by cell to execute the analysis.
+

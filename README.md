@@ -129,6 +129,6 @@ The following libraries were used:
 
 ## Video Demo
 
-Watch the full video demo [here](https://youtu.be/4oLf_3x37xU).
+Watch the full video demo [here](https://youtube.com).
 
 

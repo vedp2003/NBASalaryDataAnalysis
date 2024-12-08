@@ -6,7 +6,7 @@ This project focuses on analyzing NBA player performance data and predicting pla
 
 ## Dataset
 
-The dataset was sourced from Kaggle. The data can be downloaded from here: [NBA Salary Dataset](https://www.kaggle.com/datasets/loganlauton/nba-players-and-team-data). The two important datasets used are 'NBA Player Stats.csv' and 'NBA Salaries.csv'. We have also added these dataset csv files to this repository folder. 
+The dataset was sourced from Kaggle. The data can be downloaded from here: [NBA Salary Dataset](https://www.kaggle.com/datasets/loganlauton/nba-players-and-team-data). The two important datasets used are 'NBA Player Stats.csv' and 'NBA Salaries.csv'. We have also added these dataset csv files to this repository folder. We downloaded the zip file and extracted the CSV files, which are now available in this GitHub repository. Download these from the Githib repository and ensure the data files are in the same directory as the other files including the Jupyter notebook.
 
 ---
 

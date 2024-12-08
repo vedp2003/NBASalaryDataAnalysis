@@ -51,6 +51,11 @@ The dataset was sourced from Kaggle. The data can be downloaded from here: [NBA 
 3. **Random Forest Regressor**:
    - Enhanced the model by reducing overfitting and improving robustness. This turned out to be the best model with a relatively high R² value. 
 
+### Interactive Dashboard
+1. Integrated an user interactive dashboard using `ipywidgets` to dynamically input player statistics and predict salaries.
+2. Added a slider for numerical values (e.g., Age, Points Scored) and text fields for categorical values.
+3. Used a trained Random Forest Regressor model (best performing model) to predict salaries dynamically.
+4. Displayed predicted salaries after button click to create an user friendly dashboard.
 
 ---
 
@@ -79,10 +84,11 @@ The dataset was sourced from Kaggle. The data can be downloaded from here: [NBA 
 6. **Machine Learning**:
    - Trains regression models (Linear Regression, Decision Tree, and Random Forest) to predict salaries based on player performance metrics.
    - Evaluates models using metrics like Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R² score.
-
-7. **Final Outputs**:
-   - Identifies key insights, such as top players by Weighted Efficiency, salary-to-performance ratio, and team-level salary analysis.
-   - Creates a good model that can help predict NBA player salaries in future seasons/years given their current stats/performance.
+   - Create robust models that can help predict NBA player salaries in future seasons/years given their current stats/performance.
+     
+7. **Interactive Dashboard**:
+   - Implements an user interacgive dashboard using `ipywidgets` to allow users to input player stats dynamically.
+   - Predicts salaries using the best performing model (Random Forest Regressor) and displays results interactively.
 
 ---
 
@@ -95,6 +101,8 @@ The following libraries were used that must be imported:
 - `seaborn`
 - `scikit-learn`
 - `sqlite3`
+- `ipywidgets`
+
 
 ---
 
@@ -110,6 +118,46 @@ The following libraries were used that must be imported:
 
 3. Download the dataset csvs from Kaggle. Save them in the same directory/folder as the Jupyter notebook. 
 4. Open and run the Jupyter notebook `finalProj.ipynb` cell by cell to execute the analysis (you can open this and run it on CodeBench or other Python platforms that allow Python Notebooks)
+5. Additional steps and installations may be needed to successfully run the Interactive Dashboard on the notebook. See below for steps
+
+## Setup for Interactive Dashboard
+
+To enable the interactive dashboard in Jupyter Notebook, follow these steps:
+
+1. **Verify Node.js and npm**:
+   Run the following commands to check if Node.js and npm are installed and their versions:
+   ```bash
+   node -v
+   npm -v
+   
+2. . **Upgrade Node.js if necessary**:
+   If your Node.js version is below 20.0.0, you may need to upgrade it using the following commands:
+   ```bash
+   wget https://nodejs.org/dist/v20.8.0/node-v20.8.0-linux-x64.tar.xz
+   tar -xf node-v20.8.0-linux-x64.tar.xz
+   mv node-v20.8.0-linux-x64 /path/to/your/directory/nodejs  # Replace /path/to/your/directory with the directory you want
+   export PATH=/path/to/your/directory/nodejs/bin:$PATH  # Replace with the same directory as above
+
+3. **Install required Python packages**:
+   Install the necessary Python packages for widgets functionality:
+   ```bash
+   pip install --user ipywidgets
+   pip install --user jupyterlab-widgets
+
+4. **Install JupyterLab extensions**:
+   Install the required JupyterLab extensions for enabling widgets:
+   ```bash
+   jupyter labextension install @jupyter-widgets/jupyterlab-manager --user
+
+5. **Rebuild JupyterLab and Restart the Kernel**:
+   After installing the extensions, rebuild JupyterLab to integrate the changes. Restart the kernel to ensure all updates take effect.
+
+6. ### Note:
+The commands listed above can be executed in the terminal. However, these commands can also be run directly within Jupyter Notebook cells by adding a `!` in front of each command. For example:
+```bash
+!pip install --user ipywidgets
+!jupyter labextension install @jupyter-widgets/jupyterlab-manager --user
+
 
 ## Video Demo
 

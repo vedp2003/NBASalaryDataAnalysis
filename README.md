@@ -172,7 +172,7 @@ To enable the interactive dashboard in Jupyter Notebook, follow these steps:
 
 ---
 
-### Video Demo
+## Video Demo
 
 We have a video demo going through our project. Watch the full video demo [here](https://youtube.com).
 

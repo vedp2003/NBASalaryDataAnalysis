@@ -14,24 +14,35 @@ The dataset was sourced from Kaggle. The data can be downloaded from here: [NBA 
 
 ### Data Preprocessing and Cleaning
 1. Merged the player statistics and salary datasets to include player performance statistics, positions, teams, and salaries. This involved joining the datasets on common attributes. 
-2. Handled missing values and outliers across key features like points, assists, rebounds, and salary. This involved data cleaning and handling Null Values. 
+2. Handled missing values and outliers across key features like points, assists, rebounds, and salary. This involved data cleaning, handling Null Values, and removing outliers using the Z-Score Method.
 3. Converted numerical columns to the appropriate data types for mathematical operations.
 4. Standardized features and scaled data where necessary.
 
 ### Feature Engineering
-1. Calculated Weighted Efficiency (WEFF) using player performance metrics.
-2. Binned players into efficiency tiers: Low, Moderate, and High Efficiency.
-3. Added derived columns to enhance feature richness for model training.
+We derived new variables from existing ones to better capture underlying patterns in the data.
+1. **Weighted Efficiency (WEFF)**: Combines points, assists, rebounds, steals, blocks, and turnovers, normalized by games played.
+2. **Points Per Game (PPG)**: Points scored divided by games played.
+3. **Assists Per Game (APG)**: Assists divided by games played.
+4. **Rebounds Per Game (RPG)**: Total rebounds divided by games played.
+5. **Steals Per Game (SPG)**: Steals divided by games played.
+6. **Blocks Per Game (BPG)**: Blocks divided by games played.
+7. **Turnovers Per Game (TPG)**: Turnovers divided by games played.
+8. **Usage Rate**: Estimate of a player's involvement in offensive plays, based on field goals attempted, free throws attempted, and turnovers.
+9. **Shooting Efficiency**: Average of field goal percentage and effective field goal percentage.
+10. **Offensive Contribution**: Weighted sum of points, assists, and offensive rebounds.
+11. **Defensive Contribution**: Sum of defensive rebounds, steals, and blocks.
+12. **Experience**: Estimated years of professional activity, assuming players start their careers at age 19.
+13. **Games Started Percentage (GS%)**: Games started as a percentage of games played.
+14. **Impact Score**: Weighted Efficiency (WEFF) per minute played.
+15. **Efficiency Tiers**: Players categorized into low, moderate, and high efficiency tiers.
    
 ### Exploratory Data Analysis (EDA)
-1. **Correlation Analysis**:
-   - Analyzed relationships between metrics like Weighted Efficiency (WEFF) and salary.
-   - Computed correlations to find the most impactful features.
-2. **Visualization**:
-   - Visualized salary trends by position, efficiency, and season using bar plots, scatter plots, and line plots.
-   - Identified top-performing players based on WEFF.
-   - Created heatmaps to compare average salaries by position, efficiency tier, and season.
-   - Created more salary related visualizations to better see trends for predicting overall salary based on player stats and performance.
+1. **Visualization**:
+   - Created plots to see the correlation of different metrics with Salary to find which metric was important.
+   - Some plots we made include: 
+      - Visualized salary trends by position, efficiency, and season using bar plots, scatter plots, and line plots.
+      - Created more salary related visualizations to better see trends for predicting overall salary based on player stats and performance.
+      - Salary vs eFG% resulted in a plot which has a linear like trend.
 
 ### SQL Integration
 1. Created a relational SQLite database for querying player statistics.

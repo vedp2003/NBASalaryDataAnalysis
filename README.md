@@ -157,8 +157,10 @@ To enable the interactive dashboard in Jupyter Notebook, follow these steps:
 5. **Install required Python packages**:
    Install the necessary Python packages for widgets functionality:
    ```bash
-   pip install --user ipywidgets
-   pip install --user jupyterlab-widgets
+   pip install --user --upgrade ipywidgets
+   pip install --user jupyterlab_widgets
+   pip install --upgrade jupyterlab
+   pip install --upgrade jupyterlab_widgets
 
 6. **Install JupyterLab extensions**:
    Install the required JupyterLab extensions for enabling widgets:

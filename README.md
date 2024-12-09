@@ -39,32 +39,31 @@ We derived new variables from existing ones to better capture underlying pattern
 ### Exploratory Data Analysis (EDA)
 1. **Visualization**:
    - Created plots to see the correlation of different metrics with Salary to find which metric was important.
+   - Made visualizations for each numeric metric vs salary to find the best features for predicting salary 
    - Some plots we made include: 
       - Visualized salary trends by position, efficiency, and season using bar plots, scatter plots, and line plots.
       - Created more salary related visualizations to better see trends for predicting overall salary based on player stats and performance.
-      - Salary vs eFG% resulted in a plot which has a linear like trend.
 
 ### SQL Integration
 1. Created a relational SQLite database for querying player statistics.
 2. Build a schema and then inserted our dataset information in the local database
 3. Executed advanced SQL queries for aspects such as:
-   - Analyze salary trends by position and efficiency.
-   - Identify high-performing, low-salary players.
+   - Analyze salary trends in relation to NBA player stats/performance metrics
    - Explore year-on-year salary growth across seasons.
 4. By incorporating database management, we were able to easily query and find salary related trends, helping us build the overall machine learning model.
 
 ### Machine Learning Models
 1. **Linear Regression**:
-   - Established a baseline for salary prediction.
+   - Established a baseline model for salary prediction. This model didnt perform too well. 
    - Evaluated using Mean Squared Error (MSE), Mean Absolute Error (MAE), and R² score.
 2. **Decision Tree Regressor**:
-   - Improved prediction accuracy by capturing non-linear relationships.
+   - Improved prediction accuracy by capturing non-linear relationships. It uses decision trees to predict. 
 3. **Random Forest Regressor**:
-   - Enhanced the model by reducing overfitting and improving robustness. This turned out to be the best model with a relatively high R² value. 
+   - Enhanced the model by reducing overfitting and improving robustness. This works by combining the predictions of multiple decision trees. This turned out to be the best model with a relatively high R² value. 
 
 ### Interactive Dashboard
 1. Integrated an user interactive dashboard using `ipywidgets` to dynamically input player statistics and predict salaries.
-2. Added a slider for numerical values (e.g., Age, Points Scored) and text fields for categorical values.
+2. Added a slider for values (e.g., Age, FG, Season). 
 3. Used a trained Random Forest Regressor model (best performing model) to predict salaries dynamically.
 4. Displayed predicted salaries after button click to create an user friendly dashboard.
 

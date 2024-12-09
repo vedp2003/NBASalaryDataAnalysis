@@ -148,20 +148,27 @@ To enable the interactive dashboard in Jupyter Notebook, follow these steps:
    mv node-v20.8.0-linux-x64 /path/to/your/directory/nodejs  # Replace /path/to/your/directory with the directory you want
    export PATH=/path/to/your/directory/nodejs/bin:$PATH  # Replace with the same directory as above
 
-3. **Install required Python packages**:
+3. **Make sure updated Node.js path is active:-**:
+   You can ensure the updated Node.js path is active by running this:
+    ```bash
+    import os
+    os.environ['PATH'] = "/path/to/your/directory/nodejs/bin:" + os.environ['PATH']  Replace /path/to/your/directory with the directory
+    
+5. **Install required Python packages**:
    Install the necessary Python packages for widgets functionality:
    ```bash
    pip install --user ipywidgets
    pip install --user jupyterlab-widgets
 
-4. **Install JupyterLab extensions**:
+6. **Install JupyterLab extensions**:
    Install the required JupyterLab extensions for enabling widgets:
    ```bash
-   jupyter labextension install @jupyter-widgets/jupyterlab-manager --user
+   jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
-5. **Rebuild JupyterLab and Restart the Kernel**:
+7. **Rebuild JupyterLab and Restart the Kernel**:
    After installing the extensions, rebuild JupyterLab to integrate the changes. Restart the kernel to ensure all updates take effect.
-
+   It can be rebuilt by running: !jupyter lab build
+   
    ### NOTE
    The commands listed above can be executed in the terminal. However, these commands can also be run directly within Jupyter Notebook cells by adding a `!` in front of each command. For example:
    ```bash

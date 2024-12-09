@@ -168,7 +168,6 @@ To enable the interactive dashboard in Jupyter Notebook, follow these steps:
    jupyter labextension install @jupyter-widgets/jupyterlab-manager         #Run this as long there are no permission constraints 
    jupyter labextension install @jupyter-widgets/jupyterlab-manager --app-dir=$(jupyter --data-dir)/lab    #You can also run this if you want to install the extensions in your home director
 
-
 7. **Rebuild JupyterLab and Restart the Kernel**:
    After installing the extensions, rebuild JupyterLab to integrate the changes. Restart the kernel to ensure all updates take effect.
    It can be rebuilt by running: !jupyter lab build
@@ -179,7 +178,6 @@ To enable the interactive dashboard in Jupyter Notebook, follow these steps:
    !pip install --user ipywidgets
    !jupyter labextension install @jupyter-widgets/jupyterlab-manager
    !node -v
-
 
 ---
 

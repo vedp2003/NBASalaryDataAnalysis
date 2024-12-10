@@ -1,4 +1,4 @@
-# Predicting NBA Player Salaries with Machine Learning
+# Predicting NBA Player Salaries - Data Science & Machine Learning
 
 This project focuses on analyzing NBA player performance data and predicting player salaries using data analysis and machine learning models. The analysis identifies key metrics influencing salaries and provides actionable insights through data visualization, database queries, and modeling.
 

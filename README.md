@@ -33,8 +33,9 @@ We derived new variables from existing ones to better capture underlying pattern
 11. **Defensive Contribution**: Sum of defensive rebounds, steals, and blocks.
 12. **Experience**: Estimated years of professional activity, assuming players start their careers at age 19.
 13. **Games Started Percentage (GS%)**: Games started as a percentage of games played.
-14. **Impact Score**: Weighted Efficiency (WEFF) per minute played.
-15. **Efficiency Tiers**: Players categorized into low, moderate, and high efficiency tiers.
+14. **Impact Score**: Weighted Efficiency (WEFF) per minute played
+15. **Minutes Played per game (MPG): Total minutes played divided by games played
+16. **Efficiency Tiers**: Players categorized into low, moderate, and high efficiency tiers.
    
 ### Exploratory Data Analysis (EDA)
 1. **Visualization**:

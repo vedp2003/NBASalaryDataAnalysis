@@ -63,7 +63,7 @@ We derived new variables from existing ones to better capture underlying pattern
 
 ### Interactive Dashboard
 1. Integrated an user interactive dashboard using `ipywidgets` to dynamically input player statistics and predict salaries.
-2. Added a slider for values (e.g., Age, FG, Season). 
+2. Added a slider and textboxs for value inputs. 
 3. Used a trained Random Forest Regressor model (best performing model) to predict salaries dynamically.
 4. Displayed predicted salaries after button click to create an user friendly dashboard.
 

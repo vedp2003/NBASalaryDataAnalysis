@@ -49,8 +49,11 @@ We derived new variables from existing ones to better capture underlying pattern
 1. Created a relational SQLite database for querying player statistics.
 2. Build a schema and then inserted our dataset information in the local database
 3. Executed advanced SQL queries for aspects such as:
-   - Analyze salary trends in relation to NBA player stats/performance metrics
-   - Explore year-on-year salary growth across seasons.
+   - Analyzed salary trends in relation to NBA player stats, performance metrics, and efficiency.
+   - Explored year-on-year salary growth and distribution across seasons.
+   - Examined salary variations across different age groups and career stages.
+   - Investigated the impact of specific contributions (offensive/defensive) and efficiency on player earnings
+
 4. By incorporating database management, we were able to easily query and find salary related trends, helping us build the overall machine learning model.
 
 ### Machine Learning Models

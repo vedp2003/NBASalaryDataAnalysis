@@ -152,7 +152,7 @@ To enable the interactive dashboard in Jupyter Notebook, follow these steps:
    mv node-v20.8.0-linux-x64 /path/to/your/directory/nodejs  # Replace /path/to/your/directory with the directory you want
    export PATH=/path/to/your/directory/nodejs/bin:$PATH  # Replace with the same directory as above
 
-3. **Make sure updated Node.js path is active:-**:
+3. **Make sure updated Node.js path is active:**:
    You can ensure the updated Node.js path is active by running this:
     ```bash
     import os

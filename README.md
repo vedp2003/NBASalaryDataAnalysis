@@ -156,7 +156,7 @@ To enable the interactive dashboard in Jupyter Notebook, follow these steps:
    You can ensure the updated Node.js path is active by running this:
     ```bash
     import os
-    os.environ['PATH'] = "/path/to/your/directory/nodejs/bin:" + os.environ['PATH']  Replace /path/to/your/directory with the directory
+    os.environ['PATH'] = "/path/to/your/directory/nodejs/bin:" + os.environ['PATH']  # Replace /path/to/your/directory with the directory
     
 5. **Install required Python packages**:
    Install the necessary Python packages for widgets functionality:

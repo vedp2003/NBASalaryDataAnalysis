@@ -65,6 +65,10 @@ We derived new variables from existing ones to better capture underlying pattern
 3. **Random Forest Regressor**:
    - Enhanced the model by reducing overfitting and improving robustness. This works by combining the predictions of multiple decision trees. This turned out to be the best model with a relatively high R² value. 
 
+### Advanced Statistic Concepts 
+1. **PRESS, Cp, Neural Network, Bootstrapping, K-fold cross-validation**:
+   - Helped evaluate the model's performance and analyze how robust it was
+     
 ### Interactive Dashboard
 1. Integrated an user interactive dashboard using `ipywidgets` to dynamically input player statistics and predict salaries.
 2. Added a slider and textboxs for value inputs. 
@@ -184,8 +188,3 @@ To enable the interactive dashboard in Jupyter Notebook, follow these steps:
    !node -v
 
 ---
-
-## Video Demo
-
-We have a video demo going through our project. Watch the full video demo [here](https://drive.google.com/file/d/1eB9D3GcYGfuK5Vc1XHkrmbCuFmSL6fgW/view?usp=sharing).
-

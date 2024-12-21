@@ -106,7 +106,7 @@ We derived new variables from existing ones to better capture underlying pattern
    - Evaluates models using metrics like Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R² score.
    - Create robust models that can help predict NBA player salaries in future seasons/years given their current stats/performance.
      
-7. "Model Evaluation**:
+7. **Model Evaluation**:
    - Applies statistical concepts such as PRESS and Mallow's Cp to choose the best model and see its performance
    - Performs bootstrapping to evaluate the final model's performance on multiple resampled training sets to get 95% confidence intervals for Mean Squared Error (MSE) and R² scores.
    - Does k-fold cross validation by splitting the dataset into k subsets (folds). The model is trained on k-1 folds and tested on the remaining fold, repeating the process k times so that each fold serves as the test set once. This method ensures that the model is tested on different subsets of          data, providing a robust estimate of its performance.

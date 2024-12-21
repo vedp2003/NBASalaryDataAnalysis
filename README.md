@@ -61,12 +61,14 @@ We derived new variables from existing ones to better capture underlying pattern
    - Established a baseline model for salary prediction. This model didnt perform too well. 
    - Evaluated using Mean Squared Error (MSE), Mean Absolute Error (MAE), and R² score.
 2. **Decision Tree Regressor**:
-   - Improved prediction accuracy by capturing non-linear relationships. It uses decision trees to predict. 
-3. **Random Forest Regressor**:
+   - Improved prediction accuracy by capturing non-linear relationships. It uses decision trees to predict.
+3. **Neural Network**:
+    - Uses a network of nodes (with one hidden layer using a greedy optimization approach) 
+5. **Random Forest Regressor**:
    - Enhanced the model by reducing overfitting and improving robustness. This works by combining the predictions of multiple decision trees. This turned out to be the best model with a relatively high R² value. 
 
 ### Advanced Statistic Concepts 
-1. **PRESS, Cp, Neural Network, Bootstrapping, K-fold cross-validation**:
+1. **PRESS, Cp, Bootstrapping, K-fold cross-validation**:
    - Helped evaluate the model's performance and analyze how robust it was
      
 ### Interactive Dashboard
@@ -100,11 +102,16 @@ We derived new variables from existing ones to better capture underlying pattern
    - Executes queries to analyze salary trends, identify top players, evaluate team performance, etc. 
 
 6. **Machine Learning**:
-   - Trains regression models (Linear Regression, Decision Tree, and Random Forest) to predict salaries based on player performance metrics.
+   - Trains models (Linear Regression, Decision Tree, Nueral Network, Random Forest) to predict salaries based on player performance metrics.
    - Evaluates models using metrics like Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R² score.
    - Create robust models that can help predict NBA player salaries in future seasons/years given their current stats/performance.
      
-7. **Interactive Dashboard**:
+7. "Model Evaluation**:
+   - Applies statistical concepts such as PRESS and Mallow's Cp to choose the best model and see its performance
+   - Performs bootstrapping to evaluate the final model's performance on multiple resampled training sets to get 95% confidence intervals for Mean Squared Error (MSE) and R² scores.
+   - Does k-fold cross validation by splitting the dataset into k subsets (folds). The model is trained on k-1 folds and tested on the remaining fold, repeating the process k times so that each fold serves as the test set once. This method ensures that the model is tested on different subsets of          data, providing a robust estimate of its performance.
+     
+8. **Interactive Dashboard**:
    - Implements an user interacgive dashboard using `ipywidgets` to allow users to input player stats dynamically.
    - Predicts salaries using the best performing model (Random Forest Regressor) and displays results interactively.
 

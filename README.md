@@ -126,6 +126,7 @@ The following libraries were used that must be imported:
 - `seaborn`
 - `scikit-learn`
 - `sqlite3`
+- `statsmodel`
 - `ipywidgets`
 
 

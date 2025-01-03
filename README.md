@@ -82,7 +82,7 @@ We derived new variables from existing ones to better capture underlying pattern
 2. Integrated sliders and dropdowns for real-time input of player stats.
 3. Displayed predicted salaries using the best-performing Random Forest Regressor model.
 4. Enhanced user accessibility with visual styling, animations, and responsiveness for mobile devices.
-5. This is deployed using Netlify. Here is the link: 
+5. This is deployed using Heroku. Here is the link: 
 
 ---
 

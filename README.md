@@ -182,7 +182,7 @@ To enable the local dashboard in Jupyter Notebook, follow these steps:
     import os
     os.environ['PATH'] = "/path/to/your/directory/nodejs/bin:" + os.environ['PATH']  # Replace /path/to/your/directory with the directory
     
-5. **Install required Python packages**:
+4. **Install required Python packages**:
    Install the necessary Python packages for widgets functionality:
    ```bash
    pip install --user --upgrade ipywidgets
@@ -190,13 +190,13 @@ To enable the local dashboard in Jupyter Notebook, follow these steps:
    pip install --upgrade jupyterlab
    pip install --upgrade jupyterlab_widgets
 
-6. **Install JupyterLab extensions**:
+5. **Install JupyterLab extensions**:
    Install the required JupyterLab extensions for enabling widgets:
    ```bash
    jupyter labextension install @jupyter-widgets/jupyterlab-manager         #Run this as long there are no permission constraints 
    jupyter labextension install @jupyter-widgets/jupyterlab-manager --app-dir=$(jupyter --data-dir)/lab    #You can also run this if you want to install the extensions in your home director
 
-7. **Rebuild JupyterLab and Restart the Kernel**:
+6. **Rebuild JupyterLab and Restart the Kernel**:
    After installing the extensions, rebuild JupyterLab to integrate the changes. Restart the kernel to ensure all updates take effect.
    It can be rebuilt by running: !jupyter lab build
    

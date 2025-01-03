@@ -1,12 +1,12 @@
-# Predicting NBA Player Salaries - Data Science & Machine Learning
+# NBA Player Salary Prediction Dashboard - Data Science & Machine Learning
 
 This project focuses on analyzing NBA player performance data and predicting player salaries using data analysis and machine learning models. The analysis identifies key metrics influencing salaries and provides actionable insights through data visualization, database queries, and modeling.
 
 ---
 
-## Dataset
+## Datasets
 
-The dataset was sourced from Kaggle. The data can be downloaded from here: [NBA Salary Dataset](https://www.kaggle.com/datasets/loganlauton/nba-players-and-team-data). The two important datasets used are 'NBA Player Stats.csv' and 'NBA Salaries.csv'. We have also added these dataset csv files to this repository folder. We downloaded the zip file and extracted the CSV files, which are now available in this GitHub repository. Download these from the Github repository and ensure the data files are in the same directory as the other files including the Jupyter notebook.
+The dataset was sourced from Kaggle. The data can be downloaded from here: [NBA Salary Dataset](https://www.kaggle.com/datasets/loganlauton/nba-players-and-team-data). The two important datasets used are 'NBA Player Stats.csv' and 'NBA Salaries.csv'. 
 
 ---
 
@@ -71,11 +71,18 @@ We derived new variables from existing ones to better capture underlying pattern
 1. **PRESS, Cp, Bootstrapping, K-fold cross-validation**:
    - Helped evaluate the model's performance and analyze how robust it was
      
-### Interactive Dashboard
+### Local Dashboard
 1. Integrated an user interactive dashboard using `ipywidgets` to dynamically input player statistics and predict salaries.
 2. Added a slider and textboxs for value inputs. 
 3. Used a trained Random Forest Regressor model (best performing model) to predict salaries dynamically.
 4. Displayed predicted salaries after button click to create an user friendly dashboard.
+
+### Interactive Web Dashboard
+1. Developed a web-based interactive dashboard using Dash for dynamic player salary predictions.
+2. Integrated sliders and dropdowns for real-time input of player stats.
+3. Displayed predicted salaries using the best-performing Random Forest Regressor model.
+4. Enhanced user accessibility with visual styling, animations, and responsiveness for mobile devices.
+5. This is deployed using Netlify. Here is the link: 
 
 ---
 
@@ -111,9 +118,12 @@ We derived new variables from existing ones to better capture underlying pattern
    - Performs bootstrapping to evaluate the final model's performance on multiple resampled training sets to get 95% confidence intervals for Mean Squared Error (MSE) and R² scores.
    - Does k-fold cross validation by splitting the dataset into k subsets (folds). The model is trained on k-1 folds and tested on the remaining fold, repeating the process k times so that each fold serves as the test set once. This method ensures that the model is tested on different subsets of          data, providing a robust estimate of its performance.
      
-8. **Interactive Dashboard**:
+8. **Local Dashboard**:
    - Implements an user interacgive dashboard using `ipywidgets` to allow users to input player stats dynamically.
    - Predicts salaries using the best performing model (Random Forest Regressor) and displays results interactively.
+
+9.  **Web Dashboard**:
+   - Deployed an interactive Dash-based web application for real-time salary predictions for users.
 
 ---
 
@@ -127,7 +137,9 @@ The following libraries were used that must be imported:
 - `scikit-learn`
 - `sqlite3`
 - `statsmodel`
+- `tensorflow`
 - `ipywidgets`
+- `dash`
 
 
 ---
@@ -142,13 +154,13 @@ The following libraries were used that must be imported:
    ```bash
    cd NBAMachineLearningProject
 
-3. Download the dataset csvs from Kaggle. Save them in the same directory/folder as the Jupyter notebook. 
-4. Open and run the Jupyter notebook `finalProj.ipynb` cell by cell to execute the analysis (you can open this and run it on CodeBench or other Python platforms that allow Python Notebooks)
+3. Download the dataset csvs. Save them in the same directory/folder as the Jupyter notebook. 
+4. Open and run the Jupyter notebook `nba_salary_prediction_project.ipynb` cell by cell to execute the analysis
 5. Additional steps and installations may be needed to successfully run the Interactive Dashboard on the notebook. See below for steps
 
-## Setup for Interactive Dashboard
+## Setup for Local Dashboard
 
-To enable the interactive dashboard in Jupyter Notebook, follow these steps:
+To enable the local dashboard in Jupyter Notebook, follow these steps:
 
 1. **Verify Node.js and npm**:
    Run the following commands to check if Node.js and npm are installed and their versions:
@@ -196,3 +208,14 @@ To enable the interactive dashboard in Jupyter Notebook, follow these steps:
    !node -v
 
 ---
+
+## Setup for Interactive Web Dashboard
+
+To enable the web dashboard, follow these steps:
+
+1. **Run the dashboard**:
+   Run the following commands to run the web dashboard
+   ```bash
+   python nba_salary_dashboard.py
+
+   

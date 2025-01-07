@@ -75,14 +75,7 @@ We derived new variables from existing ones to better capture underlying pattern
 1. Integrated an user interactive dashboard using `ipywidgets` to dynamically input player statistics and predict salaries.
 2. Added a slider and textboxs for value inputs. 
 3. Used a trained Random Forest Regressor model (best performing model) to predict salaries dynamically.
-4. Displayed predicted salaries after button click to create an user friendly dashboard.
-
-### Interactive Web Dashboard
-1. Developed a web-based interactive dashboard using Dash for dynamic player salary predictions.
-2. Integrated sliders and dropdowns for real-time input of player stats.
-3. Displayed predicted salaries using the best-performing Random Forest Regressor model.
-4. Enhanced user accessibility with visual styling, animations, and responsiveness for mobile devices.
-5. This is deployed using Heroku. Here is the link: 
+4. Displayed predicted salaries after button click to create an user friendly dashboard. 
 
 ---
 
@@ -122,8 +115,6 @@ We derived new variables from existing ones to better capture underlying pattern
    - Implements an user interacgive dashboard using `ipywidgets` to allow users to input player stats dynamically.
    - Predicts salaries using the best performing model (Random Forest Regressor) and displays results interactively.
 
-9.  **Web Dashboard**:
-   - Deployed an interactive Dash-based web application for real-time salary predictions for users.
 
 ---
 
@@ -137,10 +128,7 @@ The following libraries were used that must be imported:
 - `scikit-learn`
 - `sqlite3`
 - `statsmodel`
-- `tensorflow`
 - `ipywidgets`
-- `dash`
-
 
 ---
 
@@ -158,7 +146,7 @@ The following libraries were used that must be imported:
 4. Open and run the Jupyter notebook `nba_salary_prediction_project.ipynb` cell by cell to execute the analysis
 5. Additional steps and installations may be needed to successfully run the Interactive Dashboard on the notebook. See below for steps
 
-## Setup for Local Dashboard
+## Setup for Dashboard
 
 To enable the local dashboard in Jupyter Notebook, follow these steps:
 
@@ -206,16 +194,5 @@ To enable the local dashboard in Jupyter Notebook, follow these steps:
    !pip install --user ipywidgets
    !jupyter labextension install @jupyter-widgets/jupyterlab-manager
    !node -v
-
 ---
-
-## Setup for Interactive Web Dashboard
-
-To enable the web dashboard, follow these steps:
-
-1. **Run the dashboard**:
-   Run the following commands to run the web dashboard
-   ```bash
-   python nba_salary_dashboard.py
-
    
